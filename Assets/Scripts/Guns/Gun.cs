@@ -23,7 +23,7 @@ public class Gun : MonoBehaviour
         }
     }
 
-    public void Shoot()
+    public virtual void Shoot()
     {
         shotTimer = 0;
         shotSound.pitch = Random.Range(0.8f, 1.2f);
@@ -41,12 +41,12 @@ public class Gun : MonoBehaviour
         flash.SetActive(false);
     }
 
-    public void Activate()
+    public virtual void Activate()
     {
         gameObject.SetActive(true);
     }
     
-    public void Deactivate()
+    public virtual void Deactivate()
     {
         gameObject.SetActive(false);
     }
