@@ -10,10 +10,20 @@ public class ActivateByDistance : MonoBehaviour
     public float distanceToActivate = 15;
     private bool _isActive = true;
     private Activator _activator;
+
+    public Activator Activator { 
+        get 
+        {
+            if (!_activator)
+                _activator = FindObjectOfType<Activator>();
+            return _activator; 
+        } 
+        set => _activator = value; }
+
     private void Start()
     {
-        _activator = FindObjectOfType<Activator>();
-        _activator.objectsToActivate.Add(this);    
+        if (Activator) 
+            Activator.objectsToActivate.Add(this);    
     }
 
     public void CheckDistance(Vector3 playerPosition)
@@ -44,7 +54,8 @@ public class ActivateByDistance : MonoBehaviour
 
     private void OnDestroy()
     {
-        _activator.objectsToActivate.Remove(this);
+        if (Activator)
+            Activator.objectsToActivate.Remove(this);
     }
 
 #if UNITY_EDITOR
