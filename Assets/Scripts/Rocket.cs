@@ -9,7 +9,7 @@ public class Rocket : Enemy
     public float rotationSpeed = 1;
     private Transform childTransform;
 
-    private void Start()
+    private new void Start()
     {
         base.Start();
         childTransform = transform.GetChild(0);
@@ -21,6 +21,7 @@ public class Rocket : Enemy
         if (FindTarget())
         {
             transform.position += transform.forward * speed * Time.deltaTime;
+            transform.position = new Vector3(transform.position.x, transform.position.y, 0);
             Vector3 toTarget = target.transform.position - transform.position;
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(toTarget, Vector3.forward), rotationSpeed * Time.deltaTime);
         }
