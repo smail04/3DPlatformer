@@ -26,4 +26,10 @@ public class PlayerArmory : MonoBehaviour
 
     }
 
+    public void AddBullets(int gunIndex, int amount)
+    {
+        guns[gunIndex].AddBullets(amount);
+        TakeGunByIndex(gunIndex);
+    }
+
 }

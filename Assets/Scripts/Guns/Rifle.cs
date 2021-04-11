@@ -39,4 +39,9 @@ public class Rifle : Gun
     {
         bulletsText.text = "Bullets: " + numberOfBullets.ToString();
     }
+
+    public override void AddBullets(int amount)
+    {
+        numberOfBullets += amount;
+    }
 }
