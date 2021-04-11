@@ -6,7 +6,8 @@ public class BulletsLoot : MonoBehaviour
 {
     public int gunIndex;
     public int bulletsAmount;
-    private bool _active = true;
+    private bool _active = true;//Это защита от двойного срабатывания лута. Была такая проблема. Возможно,
+                                //из-за нескольких коллайдеров на плеере.
 
     private void OnTriggerEnter(Collider other)
     {
