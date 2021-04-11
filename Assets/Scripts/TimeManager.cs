@@ -24,4 +24,9 @@ public class TimeManager : MonoBehaviour
 
         Time.fixedDeltaTime = startFixedDeltaTime * Time.timeScale;
     }
+
+    private void OnDestroy()
+    {
+        Time.fixedDeltaTime = startFixedDeltaTime;
+    }
 }
