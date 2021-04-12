@@ -316,6 +316,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf738a036a2da77439acadce502f11d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &97879554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 97879555}
+  m_Layer: 0
+  m_Name: Empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &97879555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97879554}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.722849, y: 22.343805, z: -28.57067}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &168913221 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b2a4795e0b69559458cc4c6407fcd539,
@@ -3633,6 +3663,7 @@ MonoBehaviour:
   - {fileID: 1201474094}
   - {fileID: 1860871796}
   - {fileID: 799735524}
+  - {fileID: 2038560914}
   - {fileID: 1699782714}
   - {fileID: 1535149481}
   - {fileID: 440246140}
@@ -3644,7 +3675,6 @@ MonoBehaviour:
   - {fileID: 657589282}
   - {fileID: 1186875333}
   - {fileID: 193023119}
-  - {fileID: 2038560914}
 --- !u!4 &999082242
 Transform:
   m_ObjectHideFlags: 0
@@ -4353,10 +4383,10 @@ MonoBehaviour:
   bulletPrefab: {fileID: 3865858518745651361, guid: 70875dacee5685b4395f332e4b968b6c,
     type: 3}
   bulletEmitter: {fileID: 1298417779}
-  bulletSpeed: 40
+  bulletSpeed: 30
   shotPeriod: 0.3
   shotSound: {fileID: 1201474095}
-  flash: {fileID: 1689271382}
+  flash: {fileID: 1182722746}
 --- !u!82 &1201474095
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5678,12 +5708,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &1689271382 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0efd9cfa7fa312945a8533893a76fedf,
-    type: 3}
-  m_PrefabInstance: {fileID: 2116700639}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1689271383 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0efd9cfa7fa312945a8533893a76fedf,
@@ -6256,8 +6280,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 3865858518745651361, guid: 70875dacee5685b4395f332e4b968b6c,
     type: 3}
   bulletEmitter: {fileID: 1158758766}
-  bulletSpeed: 40
-  shotPeriod: 0.07
+  bulletSpeed: 30
+  shotPeriod: 0.1
   shotSound: {fileID: 1860871795}
   flash: {fileID: 1182722746}
   numberOfBullets: 0
@@ -6761,7 +6785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cfbafce7ebcbb8439bc67cab5a3b948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeScale: 0.5
+  timeScale: 0.2
 --- !u!4 &2038560915
 Transform:
   m_ObjectHideFlags: 0
@@ -7247,7 +7271,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -32.760002, y: 12.93, z: 0}
+  m_ConnectedAnchor: {x: -7.5200005, y: 9.2300005, z: 0}
   m_UseSpring: 1
   m_Spring:
     spring: 10
