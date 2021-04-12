@@ -27,6 +27,9 @@ public class TimeManager : MonoBehaviour
 
     private void OnDestroy()
     {
-        Time.fixedDeltaTime = startFixedDeltaTime;
+        if (startFixedDeltaTime != 0) //Без этой проверки не фиксит неадекватное значение в Time.fixedDeltaTime, 
+                                      //потому что метод отабатывет 2 раза (почему-то). И во второй раз startFixedDeltaTime равен нулю.
+                                      //Из-за этого Time.fixedDeltaTime принимает значение 0.00001. Как следствие, лаги.
+            Time.fixedDeltaTime = startFixedDeltaTime;
     }
 }
