@@ -221,7 +221,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   contactDamageValue: 0
   attackPeriod: 3
-  destroyEffect: {fileID: 0}
+  destroyEffect: {fileID: 3970840864311967893, guid: 235bcca41af39c542b63f6adf43aab9f,
+    type: 3}
   animator: {fileID: 972611105635107130}
 --- !u!114 &62067697
 MonoBehaviour:

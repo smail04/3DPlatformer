@@ -11,7 +11,7 @@ public class Health : MonoBehaviour
     public HealthUI healthUI;
     public UnityEvent OnDie;
     public UnityEvent OnTakingDamage;
-    public UnityEvent OnAddHealth;
+    public UnityEvent OnAddHealth;    
     private bool invulnerable;
     private int currentHealth;
 

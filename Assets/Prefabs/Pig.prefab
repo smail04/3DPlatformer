@@ -163,7 +163,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   contactDamageValue: 1
   attackPeriod: 5
-  destroyEffect: {fileID: 0}
+  destroyEffect: {fileID: 3970840864311967893, guid: 235bcca41af39c542b63f6adf43aab9f,
+    type: 3}
   LPoint: {fileID: 5383213051142502307}
   RPoint: {fileID: 5383213052312671557}
   head: {fileID: 2880125014117809980}

@@ -46,10 +46,10 @@ public class Enemy : MonoBehaviour
             health.TakeDamageAndInvulnerate(contactDamageValue);
     }
 
-    public void Die()
+    public virtual void Die()
     {
         if (destroyEffect)
-            Instantiate(destroyEffect, transform.position, Quaternion.identity);
+            Instantiate(destroyEffect, transform.position + transform.up, Quaternion.identity);
         Destroy(gameObject);
     }
 }
