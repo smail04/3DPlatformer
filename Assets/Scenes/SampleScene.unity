@@ -1669,6 +1669,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1699782715}
     m_Modifications:
+    - target: {fileID: -6115257267528485552, guid: ef9724f37923fbb4ab862f1d668364aa,
+        type: 3}
+      propertyPath: distanceToActivate
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 2996110122696745116, guid: ef9724f37923fbb4ab862f1d668364aa,
         type: 3}
       propertyPath: m_Name
@@ -2402,6 +2407,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3066568184368421980, guid: 793a8a2326c0c4b4d8665a4d783fd368,
+        type: 3}
+      propertyPath: distanceToActivate
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 793a8a2326c0c4b4d8665a4d783fd368, type: 3}
@@ -4116,6 +4126,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1699782715}
     m_Modifications:
+    - target: {fileID: 2773601053563150589, guid: 507996e27ba13944b87b588ede22aadf,
+        type: 3}
+      propertyPath: distanceToActivate
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 5383213052709861897, guid: 507996e27ba13944b87b588ede22aadf,
         type: 3}
       propertyPath: m_RootOrder
@@ -4734,6 +4749,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1699782715}
     m_Modifications:
+    - target: {fileID: -7466527189347630584, guid: 0aec0b561e5d1924f9208845222e8735,
+        type: 3}
+      propertyPath: distanceToActivate
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 4217502326179441960, guid: 0aec0b561e5d1924f9208845222e8735,
         type: 3}
       propertyPath: m_Name
@@ -5009,6 +5029,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1699782715}
     m_Modifications:
+    - target: {fileID: -4911153044889803688, guid: 7b02dfc4012bfa8409162636f3a7d46a,
+        type: 3}
+      propertyPath: distanceToActivate
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 972611105481113568, guid: 7b02dfc4012bfa8409162636f3a7d46a,
         type: 3}
       propertyPath: m_Name
