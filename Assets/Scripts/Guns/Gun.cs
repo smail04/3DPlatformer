@@ -10,12 +10,13 @@ public class Gun : MonoBehaviour
     public float shotPeriod = 0.1f;
     public AudioSource shotSound;
     public GameObject flash;
+    public ParticleSystem shotSmoke;
 
     private float shotTimer;
 
     void Update()
     {
-        shotTimer += Time.deltaTime;
+        shotTimer += Time.unscaledDeltaTime;
         if (Input.GetMouseButton(0))
         {            
             if (shotTimer > shotPeriod)
@@ -29,6 +30,7 @@ public class Gun : MonoBehaviour
         shotSound.pitch = Random.Range(0.8f, 1.2f);
         shotSound.Play();
         flash.SetActive(true);
+        if (shotSmoke) shotSmoke.Play();
         Invoke("HideFlash", 0.05f);
         GameObject bullet = Instantiate(bulletPrefab, bulletEmitter.position, bulletEmitter.rotation);
         bullet.GetComponent<Rigidbody>().velocity = bulletEmitter.forward * bulletSpeed;
