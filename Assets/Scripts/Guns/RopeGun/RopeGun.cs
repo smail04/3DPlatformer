@@ -4,27 +4,34 @@ using UnityEngine;
 
 public class RopeGun : MonoBehaviour
 {
+    public RopeRenderer ropeRenderer;
     public Transform pointer;
     public Hook hook;
     public float speed;
     private SpringJoint _springJoint;
     private float ropeLength;
-
+    
     void Update()
     {
-        if (Input.GetMouseButtonDown(2))
+        if (Input.GetMouseButtonDown(1))
             Shot();
-        if (Input.GetMouseButtonUp(2))
+        if (Input.GetMouseButtonUp(1))
+        {
             DestroySpring();
-        if (!Input.GetMouseButton(2))
+            ropeRenderer.Hide();
+        }
+        if (!Input.GetMouseButton(1))
         {
             hook.transform.position = pointer.position;
-            hook.rigidbody.velocity = Vector3.zero;
+            hook.rigidbody.velocity = Vector3.zero;            
         }
+        else
+            ropeRenderer.Draw(pointer.position, hook.transform.position, ropeLength);
     }
 
     private void Shot()
     {
+        ropeLength = 0.01f;
         hook.DestroyJoint();
         hook.transform.position = pointer.position;
         hook.transform.rotation = pointer.rotation;
@@ -42,7 +49,7 @@ public class RopeGun : MonoBehaviour
             _springJoint.connectedAnchor = Vector3.zero;
             ropeLength = Vector3.Distance(pointer.position, hook.transform.position);
             _springJoint.maxDistance = ropeLength;
-            _springJoint.spring = 100;
+            _springJoint.spring = 200;
             _springJoint.damper = 10;
         }
     }
