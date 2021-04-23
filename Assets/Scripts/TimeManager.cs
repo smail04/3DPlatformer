@@ -13,7 +13,7 @@ public class TimeManager : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetMouseButton(1))
+        if (Input.GetKey(KeyCode.Q))
         {
             Time.timeScale = timeScale;
         }
