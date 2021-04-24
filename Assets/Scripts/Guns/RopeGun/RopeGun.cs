@@ -2,31 +2,48 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum RopeState 
+{ 
+    Active, Fly, Disabled
+}
+
 public class RopeGun : MonoBehaviour
 {
     public RopeRenderer ropeRenderer;
     public Transform pointer;
     public Hook hook;
     public float speed;
+    public RopeState ropeState;
     private SpringJoint _springJoint;
     private float ropeLength;
-    
+    private bool isRopeBreaked;
+
     void Update()
     {
         if (Input.GetMouseButtonDown(1))
-            Shot();
-        if (Input.GetMouseButtonUp(1))
         {
+            ropeState = RopeState.Fly;
+            isRopeBreaked = false;
+            Shot();
+        }
+
+        if (Input.GetMouseButtonUp(1))
+        {             
             DestroySpring();
             ropeRenderer.Hide();
         }
-        if (!Input.GetMouseButton(1))
+
+        if (Input.GetMouseButton(1) && !isRopeBreaked)
         {
-            hook.transform.position = pointer.position;
-            hook.rigidbody.velocity = Vector3.zero;            
+            ropeRenderer.Draw(pointer.position, hook.transform.position, ropeLength);
         }
         else
-            ropeRenderer.Draw(pointer.position, hook.transform.position, ropeLength);
+        {
+            hook.transform.position = pointer.position;
+            hook.rigidbody.velocity = Vector3.zero;
+        }
+        
+            
     }
 
     private void Shot()
@@ -40,6 +57,7 @@ public class RopeGun : MonoBehaviour
 
     public void CreateSpring()
     {
+        ropeState = RopeState.Active;
         if (_springJoint is null)
         {
             _springJoint = gameObject.AddComponent<SpringJoint>();
@@ -56,8 +74,16 @@ public class RopeGun : MonoBehaviour
 
     public void DestroySpring()
     {
+        ropeState = RopeState.Disabled;
         if (_springJoint)
             Destroy(_springJoint);
         _springJoint = null;
+    }
+
+    public void BreakRope()
+    {
+        isRopeBreaked = true;
+        DestroySpring();
+        ropeRenderer.Hide();
     }
 }

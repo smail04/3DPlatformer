@@ -201,7 +201,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 10989789}
   m_LocalRotation: {x: -0, y: -0, z: -0.013179093, w: 0.9999132}
-  m_LocalPosition: {x: -24.8, y: 16.409998, z: -0.5100002}
+  m_LocalPosition: {x: -24.8, y: 14.9, z: -0.5100002}
   m_LocalScale: {x: 0.12897135, y: 0.12897137, z: 0.12897141}
   m_Children: []
   m_Father: {fileID: 317799557}
@@ -578,7 +578,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 292457046}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -22, y: 15, z: 0}
+  m_LocalPosition: {x: -22, y: 13.490002, z: 0}
   m_LocalScale: {x: 11.469283, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 392018377}
@@ -658,7 +658,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -32.760002, y: 12.93, z: 0}
+  m_ConnectedAnchor: {x: -32.760002, y: 11.420002, z: 0}
   m_UseSpring: 1
   m_Spring:
     spring: 10
@@ -2527,7 +2527,7 @@ PrefabInstance:
     - target: {fileID: 2873260804299095271, guid: 793a8a2326c0c4b4d8665a4d783fd368,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.7239952
+      value: -3.2339935
       objectReference: {fileID: 0}
     - target: {fileID: 2873260804299095271, guid: 793a8a2326c0c4b4d8665a4d783fd368,
         type: 3}
@@ -3964,7 +3964,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 981714363}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.771, y: 18.46, z: 0}
+  m_LocalPosition: {x: -7.771, y: 16.95, z: 0}
   m_LocalScale: {x: 14.427264, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 392018377}
@@ -4505,7 +4505,7 @@ PrefabInstance:
     - target: {fileID: 5383213052709861897, guid: 507996e27ba13944b87b588ede22aadf,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.8811808
+      value: 0.37118244
       objectReference: {fileID: 0}
     - target: {fileID: 5383213052709861897, guid: 507996e27ba13944b87b588ede22aadf,
         type: 3}
@@ -5218,6 +5218,7 @@ MonoBehaviour:
   maxVelocity: 10
   _rigidbody: {fileID: 1269839597}
   bodyTransform: {fileID: 1603605037}
+  ropeGun: {fileID: 1269839603}
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -5400,6 +5401,7 @@ MonoBehaviour:
   pointer: {fileID: 715794516}
   hook: {fileID: 960548689}
   speed: 50
+  ropeState: 0
 --- !u!1001 &1282494224
 PrefabInstance:
   m_ObjectHideFlags: 0
