@@ -75,6 +75,7 @@ public class RopeGun : MonoBehaviour
     public void DestroySpring()
     {
         ropeState = RopeState.Disabled;
+        hook.DestroyJoint();
         if (_springJoint)
             Destroy(_springJoint);
         _springJoint = null;

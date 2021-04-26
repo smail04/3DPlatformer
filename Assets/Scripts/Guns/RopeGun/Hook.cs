@@ -18,7 +18,7 @@ public class Hook : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (_fixedJoint is null)
+        if (_fixedJoint is null && ropeGun.ropeState == RopeState.Fly)
         {
             _fixedJoint = gameObject.AddComponent<FixedJoint>();
             if (collision.rigidbody)
