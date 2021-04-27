@@ -18,6 +18,9 @@ public class Hook : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (collision.gameObject.tag == "Unhookable")
+            ropeGun.BreakRope();
+
         if (_fixedJoint is null && ropeGun.ropeState == RopeState.Fly)
         {
             _fixedJoint = gameObject.AddComponent<FixedJoint>();
