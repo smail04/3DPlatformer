@@ -11,6 +11,6 @@ public class Pointer : MonoBehaviour
     {
         Vector3 toCrosshair = crosshair.position - transform.position;
         transform.rotation = Quaternion.LookRotation(toCrosshair);        
-        head.rotation = Quaternion.Lerp(head.rotation, Quaternion.Euler(0, ((toCrosshair.x > 0)? -45 : 45), 0), Time.deltaTime * 15);
+        //head.rotation = Quaternion.Lerp(head.rotation, Quaternion.Euler(0, ((toCrosshair.x > 0)? -45 : 45), 0), Time.deltaTime * 15);
     }
 }
