@@ -5251,7 +5251,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 2011326825}
     m_Modifications:
     - target: {fileID: -9128421110698396650, guid: b2a4795e0b69559458cc4c6407fcd539,
-
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -6456,6 +6455,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3066568184368421980, guid: 793a8a2326c0c4b4d8665a4d783fd368,
+        type: 3}
+      propertyPath: distanceToActivate
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 793a8a2326c0c4b4d8665a4d783fd368, type: 3}

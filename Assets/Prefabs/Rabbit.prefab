@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bc8b7bc597de624b8d216931fcda663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToActivate: 15
+  distanceToActivate: 25
 --- !u!95 &2873260804458200527
 Animator:
   serializedVersion: 3
