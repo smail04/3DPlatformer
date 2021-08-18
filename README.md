@@ -4,8 +4,6 @@ Download for PC - https://tinyurl.com/57df9sjc
 
 Controls:
 
-  Keyboard:
-  
   WASD - Move  
   Space - Jump   
   Q - Timelapse  
