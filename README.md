@@ -5,16 +5,18 @@ Download for PC - https://tinyurl.com/57df9sjc
 Controls:
 
   Keyboard:
-  WASD - Move
-  Space - Jump
-  Q - Timelapse
-  LeftShift - Shot jump
-
+  
+  WASD - Move  
+  Space - Jump   
+  Q - Timelapse  
+  LeftShift - Shot jump  
+  Ctrl+F4 - Quit (Sorry)   
+  
   Mouse:
-  LMB - Shot
+  LMB - Shot;
   RMB - Hook
   
-  Ctrl+F4 - Quit (Sorry)
+  
 
 Gameplay: 
 
