@@ -6,7 +6,7 @@ Controls:
 
   WASD - Move  
   Space - Jump   
-  Q - Timelapse  
+  Q - Slow down time  
   LeftShift - Shot jump  
   Ctrl+F4 - Quit (Sorry)   
   
